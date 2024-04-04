@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <link rel="shortcut icon" href="https://detofa.s3.amazonaws.com/static/favicon/favicon.png"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title>Detofa entreprise</title>
+
+<!--	<link rel="stylesheet" type="text/css" href="https://detofa.s3.amazonaws.com/static/css/style2.css">-->
+
+	<link rel="stylesheet" type="text/css" href="https://detofa.s3.amazonaws.com/static/css/main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+			var user = 'AnonymousUser'
+
+            function getToken(name) {
+				var cookieValue = null;
+				if (document.cookie && document.cookie !== '') {
+					var cookies = document.cookie.split(';');
+					for (var i = 0; i < cookies.length; i++) {
+						var cookie = cookies[i].trim();
+						// Does this cookie string begin with the name we want?
+						if (cookie.substring(0, name.length + 1) === (name + '=')) {
+							cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+							break;
+						}
+					}
+				}
+				return cookieValue;
+			}
+			var csrftoken = getToken('csrftoken')
+
+			function getCookie(name) {
+				// Split cookie string and get all individual name=value pairs in an array
+				var cookieArr = document.cookie.split(";");
+
+				// Loop through the array elements
+				for(var i = 0; i < cookieArr.length; i++) {
+					var cookiePair = cookieArr[i].split("=");
+
+					/* Removing whitespace at the beginning of the cookie name
+					and compare it with the given string */
+					if(name == cookiePair[0].trim()) {
+						// Decode the cookie value and return
+						return decodeURIComponent(cookiePair[1]);
+					}
+				}
+
+				// Return null if not found
+				return null;
+			}
+
+	</script>
+
+
+</head>
+<body>
+
+
+    <!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://detofa.s3.amazonaws.com/static/css/nav.css">
+</head>
+
+
+<body style="width:100%;">
+
+    <header1 style="position: absolute; z-index: 1000; width:100%;">
+
+        <div class="container" style="background: linear-gradient(to right, #fff, #6495ED, #fff); width:100%;">
+            <input type="checkbox" name="" id="check">
+
+            <div class="logo-container">
+
+                <a href="/"  class="logo">
+                    <img src="https://detofa.s3.amazonaws.com/static/images/logo5.png" class="logo-img" alt="DETOFAentreprise">
+                </a>
+            </div>
+
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                         
+                            <li class="nav-link" style="--i: .6s">
+                               
+                               <a href="#" class="nav-item nav-link active">Categories<i class="fas fa-caret-down"></i></a>
+                               <div class="dropdown">
+                                   <ul>
+                                      
+                                      <li class="dropdown-link">
+                                        <a href=" #o">Aliments<i class="fas fa-caret-down"></i></a>
+                                        
+                                            <div class="dropdown second">
+                                                <ul>
+                                                   <li class="dropdown-link">
+                                                      <li><a href="/categories/aliments"> 
+                                      <li class="dropdown-link">
+                                        <a href=" /categories/Cuits">Cuits<i class="fas fa-caret-down"></i></a>
+                                        
+                                      </li>
+                                      
+                                      <li class="dropdown-link">
+                                        <a href=" /categories/noncuits">Non cuits<i class="fas fa-caret-down"></i></a>
+                                        
+                                      </li>
+                                      </a></li>
+                                                   </li>
+                                                </ul>
+                                            </div>
+                                        
+                                      </li>
+                                      
+                                      <li class="dropdown-link">
+                                        <a href=" /categories/Fashion_pour_femmes">Fashion femmes<i class="fas fa-caret-down"></i></a>
+                                        
+                                      </li>
+                                      
+                                      <li class="dropdown-link">
+                                        <a href=" /categories/Fashion_pour_hommes">Fashion hommes<i class="fas fa-caret-down"></i></a>
+                                        
+                                      </li>
+                                      
+                                      <li class="dropdown-link">
+                                        <a href=" /categories/telephone">Téléphone<i class="fas fa-caret-down"></i></a>
+                                        
+                                      </li>
+                                      
+                                   </ul>
+                               </div>
+                            </li>
+                         
+                        <li class="nav-link" style="--i: .6s">
+                           <a href="/profile/" class="nav-item nav-link active">Profile</a>
+                        </li>
+
+
+                        
+
+                         
+                        <li class="nav-link" style="--i: 1.1s">
+                                    <a href="#">Detofa_bank<i class="fas fa-caret-down"></i></a>
+                                    <div class="dropdown">
+                                        <ul>
+                                            <li class="dropdown-link">
+                                                <a href="#">Transfert<i class="fas fa-caret-down"></i></a>
+                                                <div class="dropdown second">
+                                                    <ul>
+                                                        <li class="dropdown-link">
+                                                            <a href="/trans/">Placer</a>
+                                                        </li>
+                                                        <li class="dropdown-link">
+                                                            <a href="/pers_list/">Historique</a>
+                                                        </li>
+                                                         <li class="dropdown-link">
+                                                            <a href="/agent_list_recu/">Reception</a>
+                                                        </li>
+                                                        <div class="arrow"></div>
+                                                    </ul>
+                                                </div>
+                                            </li>
+<!--                                            <li class="dropdown-link">-->
+<!--                                                <a href="#">Mega et unité<i class="fas fa-caret-down"></i></a>-->
+<!--                                                 <div class="dropdown second">-->
+<!--                                                    <ul>-->
+<!--                                                        <li class="dropdown-link">-->
+<!--                                                            <a href="/user_loan/">Placer</a>-->
+<!--                                                        </li>-->
+<!--                                                        <li class="dropdown-link">-->
+<!--                                                            <a href="/historique/">Historique</a>-->
+<!--                                                        </li>-->
+<!--                                                        -->
+<!--                                                        <div class="arrow"></div>-->
+<!--                                                    </ul>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+
+                                            <div class="arrow"></div>
+                                        </ul>
+                                    </div>
+                        </li>
+
+
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="#">Votre_statut<i class="fas fa-caret-down"></i></a>
+
+                                              <div class="dropdown">
+                                                    <ul>
+                                                        <li class="dropdown-link">
+                                                            <a href="/user_orders/">En cours</a>
+                                                        </li>
+                                                        <li class="dropdown-link">
+                                                            <a href="/mes_commandes/">Livrés</a>
+                                                        </li>
+                                                        
+                                                        <div class="arrow"></div>
+                                                    </ul>
+                                              </div>
+                        </li>
+
+                         <li class="nav-link" style="--i: .6s">
+                             <a  href="/videos/" class="nav-item nav-link active">Videos</a>
+                         </li>
+
+                    </ul>
+                </div>
+
+                <div class="log-sign" style="--i: 1.8s">
+                    
+
+                        <a href="/login/" class="btn solid">Se connecter</a>
+                         <a href="/register/" class="btn solid">S'enregistrer</a>
+                    
+
+
+                </div>
+
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header1>
+    <main>
+        <section>
+            <div class="overlay"></div>
+        </section>
+    </main>
+<script>
+	      jQuery(function ($) {
+
+            $(".nav-link > a").click(function() {
+          $(".dropdown").slideUp(200);
+          if (
+            $(this)
+              .parent()
+              .hasClass("active")
+          ) {
+            $(".nav-link").removeClass("active");
+            $(this)
+              .parent()
+              .removeClass("active");
+          } else {
+            $(".nav-link").removeClass("active");
+            $(this)
+              .next(".dropdown")
+              .slideDown(200);
+            $(this)
+              .parent()
+              .addClass("active");
+          }
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Detofa entreprise</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://detofa.s3.amazonaws.com/static/css/store.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".siderbar_menu li").click(function(){
+			  $(".siderbar_menu li").removeClass("active");
+			  $(this).addClass("active");
+			});
+
+			$(".hamburger").click(function(){
+			  $(".wrapper").addClass("active");
+			});
+
+			$(".close, .bg_shadow").click(function(){
+			  $(".wrapper").removeClass("active");
+			});
+		});
+	</script>
+</head>
+<style>
+	.btn2{
+        display: inline-block;
+        padding: .3rem 1rem;
+        font-size: .6rem;
+        border: 2px solid #fff;
+        border-radius: 2rem;
+        line-height: 1;
+        margin: 0 .2rem;
+        transition: .3s;
+        text-transform: uppercase;
+    }
+</style>
+<body>
+
+  <div class="main_container_store">
+      <div class="navbar">
+           <div class="hamburger1">
+			   <div><button class="talk btn2" style="margin-top: 1.5vh;">Adele</button> </div>
+
+           </div>
+           <div class="logo">
+               <form class="form " role="search" action='/s/'>
+                 <input type="search" class="form-control text-center" placeholder="Rechercher" aria-label="Search" name='q'>
+              </form>
+           </div>
+          
+      </div>
+      <div class="content" style="background: white;">
+         
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="https://detofa.s3.amazonaws.com/static/css/home.css" >
+		<link rel="stylesheet" type="text/css" href="https://detofa.s3.amazonaws.com/static/css/categories.css">
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+	<style>
+		@media screen and (max-width: 375px)  and (max-width: 812px){
+			.product-image{
+
+			   height: 40vh;
+			   width: 40vh;
+			   border-left: 5px solid #E8E8E8;
+		   }
+		   .product-detail{
+			   height: 25vh;
+			   width: 40vh;
+
+			   padding-top: 3vh;
+
+		   }
+			.service{
+				   height: 45vh;
+
+			}
+		}
+
+	</style>
+    <body14  style="width: 100%;">
+
+        <div class = "products14">
+			 <div class="about_product">
+				 <div class="p_titre">Categorie : Fashion hommes</div>
+				 <div class="all_product">
+					 <!-- single product -->
+					
+					 <div class="product">
+						 <div class="boutique">Makazi</div>
+						 <div class="product-info">
+							 <div class="product-image">
+
+								 
+												
+												  
+
+												
+												  
+													<a  href="/products/CeinturepourhommeGoldenlion/">
+														<div class="prdo-img" style="
+														width:100%;
+														height:100%;
+														background-repeat: n0-repeat;
+														background-size:cover;
+														background-position: center;
+														margin: 0 auto;
+
+														background-image: url('https://detofa.s3.amazonaws.com/media/IMG_5607.JPG');">
+
+														</div>
+													 </a>
+
+												  
+
+												
+										 
+						     </div>
+							 <div class="product-detail">
+								 <p class="cat">Categorie: Fashion hommes</p>
+								  <p> <strong><a href ="/products/CeinturepourhommeGoldenlion/" class = "product-name" style="text-transform: none;">Ceinture pour homme Goldenlion</a></strong></p>
+								 <p>
+									<span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									   <strong>Prix : $ 6,00</strong>
+									 <span class="fa fa-university checked"></span>
+									<span class="fa fa-university checked"></span>
+								    <span class="fa fa-university checked"></span></p>
+
+
+
+
+							 </div>
+						 </div>
+					 </div>
+					 <!-- end of single product -->
+					
+					 <div class="product">
+						 <div class="boutique">Makazi</div>
+						 <div class="product-info">
+							 <div class="product-image">
+
+								 
+												
+												  
+													<a  href="/products/Chemisemulticolorepourhomme6/">
+														<div class="prdo-img" style="
+														width:100%;
+														height:100%;
+														background-repeat: n0-repeat;
+														background-size:cover;
+														background-position: center;
+														margin: 0 auto;
+
+														background-image: url('https://detofa.s3.amazonaws.com/media/IMG_5580.JPG');">
+
+														</div>
+													 </a>
+
+												  
+
+												
+										 
+						     </div>
+							 <div class="product-detail">
+								 <p class="cat">Categorie: Fashion hommes</p>
+								  <p> <strong><a href ="/products/Chemisemulticolorepourhomme6/" class = "product-name" style="text-transform: none;">Chemise multicolore pour homme 6</a></strong></p>
+								 <p>
+									<span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									   <strong>Prix : $ 13,00</strong>
+									 <span class="fa fa-university checked"></span>
+									<span class="fa fa-university checked"></span>
+								    <span class="fa fa-university checked"></span></p>
+
+
+
+
+							 </div>
+						 </div>
+					 </div>
+					 <!-- end of single product -->
+					
+					 <div class="product">
+						 <div class="boutique">Makazi</div>
+						 <div class="product-info">
+							 <div class="product-image">
+
+								 
+												
+												  
+													<a  href="/products/Sousvetementspourhommes/">
+														<div class="prdo-img" style="
+														width:100%;
+														height:100%;
+														background-repeat: n0-repeat;
+														background-size:cover;
+														background-position: center;
+														margin: 0 auto;
+
+														background-image: url('https://detofa.s3.amazonaws.com/media/IMG_5610.JPG');">
+
+														</div>
+													 </a>
+
+												  
+
+												
+										 
+						     </div>
+							 <div class="product-detail">
+								 <p class="cat">Categorie: Fashion hommes</p>
+								  <p> <strong><a href ="/products/Sousvetementspourhommes/" class = "product-name" style="text-transform: none;">Sous-vêtements pour hommes  3 pièces</a></strong></p>
+								 <p>
+									<span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									   <strong>Prix : $ 6,50</strong>
+									 <span class="fa fa-university checked"></span>
+									<span class="fa fa-university checked"></span>
+								    <span class="fa fa-university checked"></span></p>
+
+
+
+
+							 </div>
+						 </div>
+					 </div>
+					 <!-- end of single product -->
+					
+					 <div class="product">
+						 <div class="boutique">Makazi</div>
+						 <div class="product-info">
+							 <div class="product-image">
+
+								 
+												
+												  
+													<a  href="/products/chemisemulticolorepourhomme1/">
+														<div class="prdo-img" style="
+														width:100%;
+														height:100%;
+														background-repeat: n0-repeat;
+														background-size:cover;
+														background-position: center;
+														margin: 0 auto;
+
+														background-image: url('https://detofa.s3.amazonaws.com/media/IMG_5579.JPG');">
+
+														</div>
+													 </a>
+
+												  
+
+												
+										 
+						     </div>
+							 <div class="product-detail">
+								 <p class="cat">Categorie: Fashion hommes</p>
+								  <p> <strong><a href ="/products/chemisemulticolorepourhomme1/" class = "product-name" style="text-transform: none;">Chemise multicolore pour homme 1</a></strong></p>
+								 <p>
+									<span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									   <strong>Prix : $ 13,00</strong>
+									 <span class="fa fa-university checked"></span>
+									<span class="fa fa-university checked"></span>
+								    <span class="fa fa-university checked"></span></p>
+
+
+
+
+							 </div>
+						 </div>
+					 </div>
+					 <!-- end of single product -->
+					
+					 <div class="product">
+						 <div class="boutique">Makazi</div>
+						 <div class="product-info">
+							 <div class="product-image">
+
+								 
+												
+												  
+
+												
+												  
+
+												
+												  
+													<a  href="/products/Chemiselinhomme/">
+														<div class="prdo-img" style="
+														width:100%;
+														height:100%;
+														background-repeat: n0-repeat;
+														background-size:cover;
+														background-position: center;
+														margin: 0 auto;
+
+														background-image: url('https://detofa.s3.amazonaws.com/media/IMG_5590.JPG');">
+
+														</div>
+													 </a>
+
+												  
+
+												
+										 
+						     </div>
+							 <div class="product-detail">
+								 <p class="cat">Categorie: Fashion hommes</p>
+								  <p> <strong><a href ="/products/Chemiselinhomme/" class = "product-name" style="text-transform: none;">Chemise lin homme</a></strong></p>
+								 <p>
+									<span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									   <strong>Prix : $ 9,00</strong>
+									 <span class="fa fa-university checked"></span>
+									<span class="fa fa-university checked"></span>
+								    <span class="fa fa-university checked"></span></p>
+
+
+
+
+							 </div>
+						 </div>
+					 </div>
+					 <!-- end of single product -->
+					
+					 <div class="product">
+						 <div class="boutique">Makazi</div>
+						 <div class="product-info">
+							 <div class="product-image">
+
+								 
+												
+												  
+													<a  href="/products/Chemisemulticolorepourhomme3/">
+														<div class="prdo-img" style="
+														width:100%;
+														height:100%;
+														background-repeat: n0-repeat;
+														background-size:cover;
+														background-position: center;
+														margin: 0 auto;
+
+														background-image: url('https://detofa.s3.amazonaws.com/media/IMG_5582.JPG');">
+
+														</div>
+													 </a>
+
+												  
+
+												
+										 
+						     </div>
+							 <div class="product-detail">
+								 <p class="cat">Categorie: Fashion hommes</p>
+								  <p> <strong><a href ="/products/Chemisemulticolorepourhomme3/" class = "product-name" style="text-transform: none;">Chemise multicolore pour homme 3</a></strong></p>
+								 <p>
+									<span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									   <strong>Prix : $ 13,00</strong>
+									 <span class="fa fa-university checked"></span>
+									<span class="fa fa-university checked"></span>
+								    <span class="fa fa-university checked"></span></p>
+
+
+
+
+							 </div>
+						 </div>
+					 </div>
+					 <!-- end of single product -->
+					
+					 <div class="product">
+						 <div class="boutique">Makazi</div>
+						 <div class="product-info">
+							 <div class="product-image">
+
+								 
+												
+												  
+													<a  href="/products/Chemisemulticolorepourhomme4/">
+														<div class="prdo-img" style="
+														width:100%;
+														height:100%;
+														background-repeat: n0-repeat;
+														background-size:cover;
+														background-position: center;
+														margin: 0 auto;
+
+														background-image: url('https://detofa.s3.amazonaws.com/media/IMG_5578.JPG');">
+
+														</div>
+													 </a>
+
+												  
+
+												
+										 
+						     </div>
+							 <div class="product-detail">
+								 <p class="cat">Categorie: Fashion hommes</p>
+								  <p> <strong><a href ="/products/Chemisemulticolorepourhomme4/" class = "product-name" style="text-transform: none;">Chemise multicolore pour homme 4</a></strong></p>
+								 <p>
+									<span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									   <strong>Prix : $ 13,00</strong>
+									 <span class="fa fa-university checked"></span>
+									<span class="fa fa-university checked"></span>
+								    <span class="fa fa-university checked"></span></p>
+
+
+
+
+							 </div>
+						 </div>
+					 </div>
+					 <!-- end of single product -->
+					
+					 <div class="product">
+						 <div class="boutique">Makazi</div>
+						 <div class="product-info">
+							 <div class="product-image">
+
+								 
+												
+												  
+
+												
+												  
+													<a  href="/products/ChemisehommemarqueNext/">
+														<div class="prdo-img" style="
+														width:100%;
+														height:100%;
+														background-repeat: n0-repeat;
+														background-size:cover;
+														background-position: center;
+														margin: 0 auto;
+
+														background-image: url('https://detofa.s3.amazonaws.com/media/IMG_5633.JPG');">
+
+														</div>
+													 </a>
+
+												  
+
+												
+										 
+						     </div>
+							 <div class="product-detail">
+								 <p class="cat">Categorie: Fashion hommes</p>
+								  <p> <strong><a href ="/products/ChemisehommemarqueNext/" class = "product-name" style="text-transform: none;">Chemise homme marque Next</a></strong></p>
+								 <p>
+									<span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									 <span class="fa fa-university checked"></span>
+									   <strong>Prix : $ 10,00</strong>
+									 <span class="fa fa-university checked"></span>
+									<span class="fa fa-university checked"></span>
+								    <span class="fa fa-university checked"></span></p>
+
+
+
+
+							 </div>
+						 </div>
+					 </div>
+					 <!-- end of single product -->
+					
+				 </div>
+			   
+			 </div>
+		</div>
+    </body14>
+</html>
+
+      </div>
+
+
+  </div>
+
+
+<!--'' or '1'='1'-->
+
+ <script>
+	      jQuery(function ($) {
+
+            $(".sidebar-dropdown > a").click(function() {
+          $(".sidebar-submenu").slideUp(200);
+          if (
+            $(this)
+              .parent()
+              .hasClass("active")
+          ) {
+            $(".sidebar-dropdown").removeClass("active");
+            $(this)
+              .parent()
+              .removeClass("active");
+          } else {
+            $(".sidebar-dropdown").removeClass("active");
+            $(this)
+              .next(".sidebar-submenu")
+              .slideDown(200);
+            $(this)
+              .parent()
+              .addClass("active");
+          }
+        });
+
+        $("#close-sidebar").click(function() {
+          $(".page-wrapper").removeClass("toggled");
+        });
+        $("#show-sidebar").click(function() {
+          $(".page-wrapper").addClass("toggled");
+        });
+
+        });
+    </script>
+    <script type="text/javascript" src="https://detofa.s3.amazonaws.com/static/js/adele.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+    <script>
+	 function openmenu()
+	 {
+	    document.getElementById("side-menu").style.display="block";
+	    document.getElementById("menu-btn").style.display="none";
+	    document.getElementById("close-btn").style.display="block";
+	 }
+	 function closemenu()
+	 {
+	    document.getElementById("side-menu").style.display="none";
+	    document.getElementById("menu-btn").style.display="block";
+	    document.getElementById("close-btn").style.display="none";
+	 }
+    </script>
+</body>
+</html>
