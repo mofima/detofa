@@ -4,7 +4,7 @@ This project involves scraping product data from the `https://detofaentreprise.c
 
 ## Scraping Script
 
-In the scraping jupyter notebook file (`scrapping.ipynb`) fetches product data from various categories on the website and saves the HTML content for each category page in a separate file in the folder named `firmin`.
+In the scraping jupyter notebook file (`scrapping.ipynb`), product data from various categories on the website is fetched and the HTML content for each category page is saved in a separate file in the folder named `firmin`.
 
 ## Analysis Script
 
